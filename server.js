@@ -31,6 +31,6 @@ app.get('/profile/:id', (req,res) => { profile.handleProfileGet(req, res, db)});
 app.put('/image', (req,res) => { image.handleImage(req, res, db)});
 
 
-app.listen(process.env.DATABASE_URL, () => {
+app.listen(port, () => {
   console.log(`App running on port: ${port}`)
 });
